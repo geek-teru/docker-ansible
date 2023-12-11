@@ -1,0 +1,21 @@
+version: '3'
+services:
+ ansible:
+    container_name: ansible.local
+    build: ./ansible_local
+    image: ansible:latest
+    volumes:
+      - type: bind
+        source: ./playbook
+        target: /playbook
+    tty: true
+ test01:
+    container_name: test01.local
+    build: ./test_local
+    privileged: true
+    tty: true
+ test02:
+    container_name: test02.local
+    build: ./test_local
+    privileged: true
+    tty: true
