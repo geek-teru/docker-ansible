@@ -6,8 +6,8 @@
 * Amazonlinux
 https://hub.docker.com/_/amazonlinux/
 
-* Ansible 2.15
-https://docs.ansible.com/ansible/latest/roadmap/ROADMAP_2_15.html
+* Ansible 2.9
+https://docs.ansible.com/ansible/latest/roadmap/ROADMAP_2_9.html
 
 ### 利用手順
 ```

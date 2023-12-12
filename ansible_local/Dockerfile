@@ -3,7 +3,7 @@ FROM amazonlinux:2
 
 RUN yum install -y git iputils
 RUN amazon-linux-extras enable ansible2
-#RUN sudo yum install -y ansible
+RUN yum install -y ansible
 
 COPY ./ssh_config /root/.ssh/config
 RUN chmod 644 /root/.ssh/config
