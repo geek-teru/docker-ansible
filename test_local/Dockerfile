@@ -1,7 +1,7 @@
 # Amazon Linux release 2023 (Amazon Linux)
 FROM amazonlinux:2
 
-RUN yum install -y openssh-clients openssh-server passwd git
+RUN yum install -y openssh-clients openssh-server passwd sudo git
 
 RUN groupadd infra
 RUN useradd infra -g infra
