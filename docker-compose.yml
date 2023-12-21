@@ -1,6 +1,6 @@
 version: '3'
 services:
- ansible:
+  ansible:
     container_name: ansible.local
     build: ./ansible_local
     image: ansible:latest
@@ -9,12 +9,14 @@ services:
         source: ./playbook
         target: /playbook
     tty: true
- sandbox-frontend-01:
+  sandbox-frontend-01:
     container_name: sandbox-frontend-01.local
     build: ./sandbox
+    ports:
+      - 80:80
     privileged: true
     tty: true
- sandbox-backend-01:
+  sandbox-backend-01:
     container_name: sandbox-backend-01.local
     build: ./sandbox
     privileged: true
