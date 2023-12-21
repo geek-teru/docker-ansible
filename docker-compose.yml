@@ -9,13 +9,13 @@ services:
         source: ./playbook
         target: /playbook
     tty: true
- test01:
-    container_name: test01.local
-    build: ./test_local
+ sandbox-frontend-01:
+    container_name: sandbox-frontend-01.local
+    build: ./sandbox
     privileged: true
     tty: true
- test02:
-    container_name: test02.local
-    build: ./test_local
+ sandbox-backend-01:
+    container_name: sandbox-backend-01.local
+    build: ./sandbox
     privileged: true
     tty: true

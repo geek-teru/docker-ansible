@@ -19,8 +19,8 @@ docker-compose up -d
 
 # docker接続
 docker exec -it ansible.local bash
-docker exec -it test01.local bash
-docker exec -it test02.local bash
+docker exec -it sandbox-frontend-01.local bash
+docker exec -it sandbox-backend-01.local bash
 
 # 停止、削除
 docker-compose down --rmi all --volumes --remove-orphans
